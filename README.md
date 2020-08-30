@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a javascript library for creating UI components. React components are modular and implements state management built into the react framework. Effectively this means you can handle DOM events with large data sets without refreshing the page. This is helpful when you want to map through large datasets without a large server load. 
+
 1. Describe component state.
+The state starts with a default value when a Component mounts and then suffers from mutations in time (mostly generated from user events). It's a serializable* representation of one point in time—a snapshot.
+
+A Component manages its own state internally, but—besides setting an initial state—has no business fiddling with the state of its children. You could say the state is private.
 
 1. Describe props.
+props (short for properties) are a Component's configuration, its options if you may. They are received from above and immutable as far as the Component receiving them is concerned.
 
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Side effects are any code in react that responds differently then you’re expecting it to do. This is usually because of asynchronous behavior outside of the scope of the function such as API requests to our backend service, calls to our authentication service, and error tracking calls to Sentry.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
