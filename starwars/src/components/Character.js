@@ -39,7 +39,7 @@ border-radius: 25px;
 
 
 
-const CharacterComponent = ({ name, species, url, gender, status }) => {
+const CharacterComponent = ({ name, species, gender, status }) => {
     return (
         <RickBox>
         <InfoDiv>
