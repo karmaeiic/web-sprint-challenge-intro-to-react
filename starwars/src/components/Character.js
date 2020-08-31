@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from "styled-components";
 
-const StarBox = styled.div`
+const RickBox = styled.div`
     display: flex;
 flex-direction: row;
 align-items: flex-start;
@@ -39,16 +39,15 @@ border-radius: 25px;
 
 const CharacterComponent = ({ name, species, origin, gender, status }) => {
     return (
-        <StarBox>
+        <RickBox>
         <InfoDiv>
             <StyledH1>{name}</StyledH1>
-                
-                    <RickInfo style={{fontWeight: "bold", color: "grey"}}>Species:</RickInfo> <RickInfo>{species}</RickInfo>
-                    <RickInfo style={{fontWeight: "bold", color: "grey"}}>Origin:</RickInfo> <RickInfo> {origin}</RickInfo>
-                    <RickInfo style={{fontWeight: "bold", color: "grey"}}>Gender:</RickInfo> <RickInfo> {gender}</RickInfo>
-                    <RickInfo style={{fontWeight: "bold", color: "grey"}}>Status:</RickInfo> <RickInfo> {status}</RickInfo>
+            <RickInfo style={{fontWeight: "bold", color: "grey"}}>Species:</RickInfo> <RickInfo>{species}</RickInfo>
+            <RickInfo style={{fontWeight: "bold", color: "grey"}}>Origin:</RickInfo> <RickInfo> {origin}</RickInfo>
+            <RickInfo style={{fontWeight: "bold", color: "grey"}}>Gender:</RickInfo> <RickInfo> {gender}</RickInfo>
+            <RickInfo style={{fontWeight: "bold", color: "grey"}}>Status:</RickInfo> <RickInfo> {status}</RickInfo>
         </InfoDiv>
-        </StarBox>
+        </RickBox>
     )
 }
 
