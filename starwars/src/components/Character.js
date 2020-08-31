@@ -1,4 +1,5 @@
 // Write your Character component here
+<<<<<<< HEAD
 import React from 'react'
 import styled from "styled-components";
 
@@ -52,3 +53,5 @@ const CharacterComponent = ({ name, species, origin, gender, status }) => {
 }
 
 export default CharacterComponent;
+=======
+>>>>>>> parent of 490bc67... app.js and character,js
