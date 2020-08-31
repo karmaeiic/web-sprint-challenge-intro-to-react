@@ -1,13 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios'; 
-import Character from './components/Character.js'
+import CharacterComponent from './components/Character.js'
 import styled from "styled-components";
 
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
+
+  const LargeHeader = styled.h1`
+  color: #33FF38;
+  font-size: 64px;
+  margin: 30px;
+  font-weight: bold;
+  
+`;
+
+const BackgroundDiv = styled.div` 
+ max-width: 100%;
+ display: flex;
+ justify-content: center;
+  `;
 
 
 
@@ -36,10 +50,10 @@ const App = () => {
           
           name={characters.name}
           species={characters.species}
-          type={characters.type}
+          origin={characters.origin}
           gender={characters.gender}
           status={characters.status}
-          />)}
+         />)}
         
     </div>
     </BackgroundDiv>
